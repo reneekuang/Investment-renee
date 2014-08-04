@@ -35,7 +35,7 @@
             android:theme="@android:style/Theme.Light.NoTitleBar" >
         </activity>
         <activity
-            android:name="andparseRelate.SignUpActivity"
+            android:name="parseRelate.SignUpActivity"
             android:label="@string/title_activity_sign_up"
             android:parentActivityName="parseRelate.LoginActivity"
             android:screenOrientation="portrait"
