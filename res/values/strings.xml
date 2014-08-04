@@ -47,6 +47,13 @@
     <string name="productTwo_label">product2</string>
      <string name="productThree_label">product3</string>
       <string name="productFour_label">product4</string>
+      
+          <string-array name="product_label">
+        <item android:id="@+id/product_bank" android:layout_width="wrap_content" android:layout_height="wrap_content">银行存款</item>
+        <item android:id="@+id/product_2" android:layout_width="wrap_content" android:layout_height="wrap_content">互联网理财</item>
+        <item android:id="@+id/product_3" android:layout_width="wrap_content" android:layout_height="wrap_content">product2</item>
+        <item android:id="@+id/product_4" android:layout_width="wrap_content" android:layout_height="wrap_content">product3</item>
+    </string-array>
     
 
 </resources>

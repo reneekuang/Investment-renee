@@ -1,7 +1,7 @@
 package addItem;
 
-import android.app.Fragment;
+import android.app.ListFragment;
 
-public class ProductTwoFragment extends Fragment {
+public class ProductTwoFragment extends ListFragment {
 
 }
