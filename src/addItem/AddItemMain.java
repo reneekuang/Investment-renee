@@ -3,7 +3,6 @@ package addItem;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.SpinnerAdapter;
@@ -11,8 +10,7 @@ import android.widget.SpinnerAdapter;
 import com.renee.investment.R;
 
 public class AddItemMain extends Activity  {
-	AddItemSectionsPagerAdapter mAddItemSectionsPagerAdapter;
-	ViewPager mViewPager;
+
         
 
 	@Override

@@ -1,7 +1,6 @@
 package com.renee.investment.myInvestment;
 
 import parseRelate.LoginActivity;
-import addItem.AddItemMain;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.FragmentTransaction;
@@ -45,6 +44,7 @@ public class MyMainActivity extends Activity implements ActionBar.TabListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
 		
         mTitle = mDrawerTitle = getTitle();
 		mMenuetitles = getResources().getStringArray(R.array.Menu_titles);
@@ -163,16 +163,14 @@ public class MyMainActivity extends Activity implements ActionBar.TabListener{
         	ParseUser.logOut();
 			navigateToLogin();
 			return true;
-        case R.id.ic_action_new:
-        	Intent intent = new Intent(MyMainActivity.this, AddItemMain.class);
-        	startActivity(intent);
 		default:
         return super.onOptionsItemSelected(item);
         }
 		
 	}
-	
-    /* The click listner for ListView in the navigation drawer */
+
+
+	/* The click listner for ListView in the navigation drawer */
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
