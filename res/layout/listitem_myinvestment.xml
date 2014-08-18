@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/myinvestment_remaindays"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"  
+        android:layout_marginRight="5dp"
+        android:textSize="30sp"/>
+    
+    <TextView android:id="@+id/myinvestment_bankname"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_toRightOf="@id/myinvestment_remaindays"  
+        android:textSize="30sp" />
+    
+    <TextView android:id="@+id/myinvestment_startdate"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_toRightOf="@id/myinvestment_remaindays"  
+        android:layout_below="@id/myinvestment_bankname"  
+        android:textSize="20sp"  />
+    
+    <TextView android:id="@+id/myinvestment_amount"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_toRightOf="@id/myinvestment_remaindays"  
+        android:layout_below="@id/myinvestment_startdate"  
+        android:textSize="30sp"  />
+    
+    <TextView android:id="@+id/myinvestment_yield"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_toRightOf="@id/myinvestment_remaindays"  
+        android:layout_below="@id/myinvestment_amount"  
+        android:textSize="20sp"  />
+    
+    <TextView android:id="@+id/myinvestment_interest"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_toRightOf="@id/myinvestment_remaindays"  
+        android:layout_below="@id/myinvestment_yield"  
+        android:textSize="20sp"  />
+
+</RelativeLayout>

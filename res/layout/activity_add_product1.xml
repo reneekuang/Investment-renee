@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="com.renee.investment.AddProduct1_Activity" >
+
+    <EditText
+        android:id="@+id/product1_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product1_duration_spinner"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/product_bankname_hint"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/product1_yield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product1_name"
+        android:layout_below="@+id/product1_name"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="@string/product_yiled_hint"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/product1_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product1_yield"
+        android:layout_below="@+id/product1_yield"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="@string/product1_amount"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/product1_duration_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/product1_amount"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/product1_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product1_duration_spinner"
+        android:layout_marginTop="32dp"
+        android:text="@string/product1_calculate_button" />
+
+    <TextView
+        android:id="@+id/product1_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product1_calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/percent_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/product1_yield"
+        android:layout_toRightOf="@+id/product1_yield"
+        android:text="@string/percent_sign"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/rmb_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/product1_amount"
+        android:layout_alignBottom="@+id/product1_amount"
+        android:layout_toRightOf="@+id/product1_amount"
+        android:text="@string/rmb_sign"
+        android:textSize="20dp" />
+
+</RelativeLayout>

@@ -54,6 +54,22 @@
         <item android:id="@+id/product_3" android:layout_width="wrap_content" android:layout_height="wrap_content">product2</item>
         <item android:id="@+id/product_4" android:layout_width="wrap_content" android:layout_height="wrap_content">product3</item>
     </string-array>
+        <string name="product_bankname_hint">bank name</string>
+        <string name="product_yiled_hint">annual yield</string>
+        <string-array name="product1_duration">
+            <item android:layout_width="wrap_content" android:id="@+id/current_deposite" android:layout_height="wrap_content">活期存款</item>
+            <item android:layout_width="wrap_content" android:id="@+id/current_deposite" android:layout_height="wrap_content">三个月定期存款</item>
+            <item android:layout_width="wrap_content" android:id="@+id/current_deposite" android:layout_height="wrap_content">六个月定期存款</item>
+            <item android:layout_width="wrap_content" android:id="@+id/current_deposite" android:layout_height="wrap_content">一年定期存款</item>
+            <item android:layout_width="wrap_content" android:id="@+id/current_deposite" android:layout_height="wrap_content">两年定期存款</item>
+            <item android:layout_width="wrap_content" android:id="@+id/current_deposite" android:layout_height="wrap_content">三年定期存款</item>
+            <item android:layout_width="wrap_content" android:id="@+id/current_deposite" android:layout_height="wrap_content">五年定期存款</item>
+        </string-array>
+            <string name="product1_amount">amount</string>
+            <string name="product1_calculate_button">CALCULATE</string>
+            <string name="percent_sign">%</string>
+            <string name="rmb_sign">RMB</string>
+            <string name="save_icon">save</string>
     
 
 </resources>

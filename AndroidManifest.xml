@@ -58,6 +58,16 @@
             android:label="@string/title_activity_add_item_popup" 
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name="addItem.AddProduct1_Activity"
+            android:label="@string/productOne_label" 
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name="addItem.AddProduct2_Activity"
+            android:label="@string/productTwo_label"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

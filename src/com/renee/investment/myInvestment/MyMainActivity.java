@@ -1,6 +1,8 @@
 package com.renee.investment.myInvestment;
 
 import parseRelate.LoginActivity;
+import addItem.AddProduct1_Activity;
+import addItem.AddProduct2_Activity;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.FragmentTransaction;
@@ -50,7 +52,6 @@ public class MyMainActivity extends Activity implements ActionBar.TabListener{
 		mMenuetitles = getResources().getStringArray(R.array.Menu_titles);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
-
      // set a custom shadow that overlays the main content when the drawer opens
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
         // set up the drawer's list view with items and click listener
@@ -143,7 +144,6 @@ public class MyMainActivity extends Activity implements ActionBar.TabListener{
     public boolean onPrepareOptionsMenu(Menu menu) {
         // If the nav drawer is open, hide action items related to the content view
         boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
-        menu.findItem(R.id.ic_action_new).setVisible(!drawerOpen);
         menu.findItem(R.id.action_logout).setVisible(!drawerOpen);
         return super.onPrepareOptionsMenu(menu);
     }
@@ -163,6 +163,14 @@ public class MyMainActivity extends Activity implements ActionBar.TabListener{
         	ParseUser.logOut();
 			navigateToLogin();
 			return true;
+        case R.id.popup_menu_product1:
+        	Intent intent = new Intent(this, AddProduct1_Activity.class);
+        	startActivity(intent);
+        return true;
+        case R.id.popup_menu_product2:
+        	Intent intent2 = new Intent(this, AddProduct2_Activity.class);
+        	startActivity(intent2);
+        return true;
 		default:
         return super.onOptionsItemSelected(item);
         }
@@ -221,4 +229,5 @@ public class MyMainActivity extends Activity implements ActionBar.TabListener{
 	public void onTabReselected(ActionBar.Tab tab,
 			FragmentTransaction fragmentTransaction) {
 	}
+	
 }
